@@ -1,0 +1,11 @@
+.section {
+    @apply h-screen flex flex-col justify-center items-center;
+}
+
+.content {
+    @apply w-full pl-[3rem];
+}
+
+.button {
+    @apply w-full flex items-start
+}
