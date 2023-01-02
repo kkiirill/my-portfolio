@@ -1,0 +1,88 @@
+.section {
+	@apply px-[3rem] flex justify-between  h-screen;
+
+	> div {
+		@apply w-1/2;
+	}
+}
+
+.heading {
+	@apply flex;
+
+	span {
+		@apply text-[56px] text-violet-500 m-0;
+
+		&:nth-child(3) {
+			@apply pr-[3px];
+		}
+	}
+}
+
+.p {
+	@apply text-[16px] pt-4;
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
+	row-gap: 4rem;
+
+	.tools {
+		display: flex;
+		justify-content: center;
+
+		svg {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			color: #fff;
+		}
+	}
+}
+
+.planet {
+	position: absolute;
+	overflow-x: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	animation: circle 9s linear infinite;
+}
+
+@keyframes circle {
+	from {
+		transform: rotate(0deg) translateX(300px) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translateX(300px) rotate(-360deg);
+	}
+}
+
+.astronaut {
+	width: 40%;
+	padding-bottom: 5rem;
+
+	animation: move 5s ease infinite;
+
+}
+
+@keyframes move {
+	0% {
+			transform: translateY(-15px)
+	}
+
+	50% {
+			transform: translateY(0) translateX(35%)
+	}
+
+	100% {
+			transform: translateY(-15px)
+	}
+}

@@ -1,11 +1,42 @@
 .section {
-    @apply h-screen flex flex-col justify-center items-center;
+    @apply h-screen flex justify-center items-center pl-[3rem] overflow-hidden;
 }
 
 .content {
-    @apply w-full pl-[3rem];
+    @apply w-full flex flex-col;
 }
 
 .button {
     @apply w-full flex items-start
+}
+
+.text {
+    span {
+        color: #fff;
+
+        &:hover {
+            color: rgb(139 92 246);
+        }
+
+        &:nth-child(4) {
+            display: block;
+        }
+
+        &:nth-child(8) {
+            padding-right: 20px;
+        }
+
+        &:nth-child(16) {
+            display: block;
+        }
+
+        &:nth-child(21) {
+            padding-right: 20px;
+        }
+
+        &:nth-child(26) {
+            padding-right: 20px;
+        }
+    }
+
 }

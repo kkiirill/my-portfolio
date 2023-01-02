@@ -1,12 +1,16 @@
-import { FC, PropsWithChildren, useState } from 'react'
+import { FC, ReactNode, useState } from 'react'
+
 import { motion, useAnimationControls } from 'framer-motion'
 
 import styles from './TextSpan.module.scss'
 
-const TextSpan: FC<PropsWithChildren> = ({ children }) => {
+interface Props {
+	children: ReactNode
+}
+
+const TextSpan: FC<Props> = ({ children }) => {
 	const [isPlaying, setIsPlaying] = useState(false)
 	const controls = useAnimationControls()
-
 	const rubberBand = () => {
 		controls.start({
 			transform: [

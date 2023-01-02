@@ -1,0 +1,65 @@
+.section {
+    @apply  px-[3rem] flex justify-between items-center h-screen relative;
+
+    > div {
+        @apply w-1/2;
+    }
+}
+
+.heading {
+    @apply flex;
+
+    span {
+        @apply text-[56px] text-violet-500 m-0;
+
+        &:nth-child(3) {
+            @apply pr-[3px]
+        }
+    }
+}
+
+.p {
+    @apply text-[16px] leading-6 pt-4;
+}
+
+.astronaut {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    padding-bottom: 5rem;
+
+    animation: move 2.5s ease infinite;
+
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-5px)
+    }
+
+    50% {
+        transform: translateY(10px) translateX(10px)
+    }
+
+    100% {
+        transform: translateY(-5px)
+    }
+}
+
+.planet {
+    position: absolute;
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation: circle 9s linear infinite;
+}
+
+@keyframes circle {
+    from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}

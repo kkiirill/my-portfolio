@@ -29,6 +29,6 @@
 			"@/providers/*": ["providers/*"],
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "app/components/ui/cursor/AnimatedCursor.jsx", "app/components/ui/cursor/AnimatedCursor.jsx"],
 	"exclude": ["node_modules"]
 }

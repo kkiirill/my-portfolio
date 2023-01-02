@@ -1,0 +1,23 @@
+.section {
+    @apply pt-[5rem] px-[3rem] h-screen relative;
+}
+
+.heading {
+    @apply flex;
+
+    span {
+        @apply text-[56px] text-violet-500;
+    }
+}
+
+.p {
+    @apply text-[16px] pt-4;
+}
+
+.projects {
+    @apply pt-[5rem] relative w-full flex overflow-x-hidden ;
+}
+
+.projects_list {
+    @apply flex justify-between items-center w-full;
+}

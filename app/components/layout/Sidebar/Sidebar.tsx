@@ -7,13 +7,19 @@ import linkedinIcon from '@/assets/images/linkedin-icon.svg'
 
 const Sidebar: FC = () => {
 	return (
-		<aside aria-label="Sidebar navigation" className="w-[140px] h-full">
+		<aside aria-label="Sidebar navigation" className="w-[140px] h-screen z-1 fixed">
 			<div className="flex items-center bg-black rounded h-screen w-full">
 				<div className="w-full">
 					<ul>
 						{sidebarLinks.map(link => (
-							<li className="px-4 py-3 text-neutral-400 text-center  border divide-solid border-neutral-800">
-								<Link href={link.path} className="text-base font-normal hover:text-violet-500">
+							<li
+								className="px-4 py-3 text-neutral-400 text-center  border divide-solid border-neutral-800"
+								key={link.title}
+							>
+								<Link
+									href={link.path}
+									className="text-base font-normal hover:text-violet-500"
+								>
 									{link.title}
 								</Link>
 							</li>

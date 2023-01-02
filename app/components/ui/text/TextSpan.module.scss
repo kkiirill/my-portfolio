@@ -1,30 +1,14 @@
 .span {
     display: inline-block;
+    padding-right: 3px;
+
     font-size: 5rem;
     font-weight: bold;
     font-family: 'Anton', sans-serif;
-    padding-right: 3px;
+    color: rgb(139 92 246);
 
-    &:hover {
-        color: rgb(139 92 246);
-    }
-
-    &:nth-child(4) {
-        display: block;
-    }
-
-    &:nth-child(8) {
-        padding-right: 20px;
-    }
-    &:nth-child(16) {
-        display: block;
-    }
-
-    &:nth-child(21) {
-        padding-right: 20px;
-    }
-
-    &:nth-child(26) {
+    &:nth-child(3) {
         padding-right: 20px;
     }
 }
+
